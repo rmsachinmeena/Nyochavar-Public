@@ -54,12 +54,12 @@
 
 Nyochavar operates four independent role-based user interfaces powered by a unified Express API and Supabase PostgreSQL backend:
 
-| Portal | Route Path | Target Audience | Key Capabilities |
-| :--- | :---: | :--- | :--- |
-| **🛍️ Buyer Storefront** | `/` | Customers & Shoppers | • Interactive luxury gifting catalog<br>• Custom Hamper Builder with real-time pricing<br>• Razorpay payment gateway & COD support<br>• Live order tracking via Socket.io<br>• Profile dashboard with doorstep delivery OTP<br>• Google Sign-In, Phone OTP, & Email OTP auth |
-| **🏪 Seller Hub** | `/seller` | Multi-vendor Merchants | • Dedicated seller landing page & 4-step registration wizard<br>• Isolated vendor dashboard with store metrics<br>• Multi-step product listing wizard with variant images<br>• Vendor order fulfillment & status transitions<br>• Strict multi-tenant isolation (sellers only access their data) |
-| **🛵 Rider Portal** | `/rider` | Delivery Fleet Partners | • Mobile-optimized PWA layout<br>• Rapid phone number & PIN-based authentication<br>• Live assigned dispatches & route addresses<br>• Secure doorstep handoff: delivery requires buyer OTP verification |
-| **👑 Super Admin** | `/admin` | Operations & Platform Admins | • Central business command center<br>• Banner, category, & product catalog governance<br>• Atomic coupon configuration & usage limits<br>• Rider fleet dispatch & live order monitoring<br>• Comprehensive audit logging & notification templates |
+| Portal                  | Route Path | Target Audience              | Key Capabilities                                                                                                                                                                                                                                                                                 |
+| :---------------------- | :--------: | :--------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **🛍️ Buyer Storefront** |    `/`     | Customers & Shoppers         | • Interactive luxury gifting catalog<br>• Custom Hamper Builder with real-time pricing<br>• Razorpay payment gateway & COD support<br>• Live order tracking via Socket.io<br>• Profile dashboard with doorstep delivery OTP<br>• Google Sign-In, Phone OTP, & Email OTP auth                     |
+| **🏪 Seller Hub**       | `/seller`  | Multi-vendor Merchants       | • Dedicated seller landing page & 4-step registration wizard<br>• Isolated vendor dashboard with store metrics<br>• Multi-step product listing wizard with variant images<br>• Vendor order fulfillment & status transitions<br>• Strict multi-tenant isolation (sellers only access their data) |
+| **🛵 Rider Portal**     |  `/rider`  | Delivery Fleet Partners      | • Mobile-optimized PWA layout<br>• Rapid phone number & PIN-based authentication<br>• Live assigned dispatches & route addresses<br>• Secure doorstep handoff: delivery requires buyer OTP verification                                                                                          |
+| **👑 Super Admin**      |  `/admin`  | Operations & Platform Admins | • Central business command center<br>• Banner, category, & product catalog governance<br>• Atomic coupon configuration & usage limits<br>• Rider fleet dispatch & live order monitoring<br>• Comprehensive audit logging & notification templates                                                |
 
 ---
 
@@ -131,12 +131,12 @@ The Express API and Socket.io share a single unified HTTP server instance. The c
 
 Portal captures are cataloged in [`Docs/screenshots/`](Docs/screenshots):
 
-| Storefront Home | Custom Hamper Builder | Checkout Flow |
-| :---: | :---: | :---: |
+|           Storefront Home           |       Custom Hamper Builder        |        Checkout Flow         |
+| :---------------------------------: | :--------------------------------: | :--------------------------: |
 | <sub>`01-storefront-home.png`</sub> | <sub>`02-hamper-builder.png`</sub> | <sub>`03-checkout.png`</sub> |
 
-| Seller Dashboard | Rider OTP Verification | Super Admin Console |
-| :---: | :---: | :---: |
+|           Seller Dashboard           |    Rider OTP Verification     |         Super Admin Console         |
+| :----------------------------------: | :---------------------------: | :---------------------------------: |
 | <sub>`04-seller-dashboard.png`</sub> | <sub>`05-rider-otp.png`</sub> | <sub>`06-admin-dashboard.png`</sub> |
 
 > [!TIP]
@@ -146,19 +146,19 @@ Portal captures are cataloged in [`Docs/screenshots/`](Docs/screenshots):
 
 ## 💻 Tech Stack
 
-| Domain | Technology / Library | Description |
-| :--- | :--- | :--- |
-| **Frontend Framework** | **React 19**, **TypeScript** | Latest React features, strong typing across state, props, and API payloads |
-| **Build & Styling** | **Vite 6**, **Tailwind CSS 4** | Blazing-fast HMR, modern CSS nesting, custom theme tokens |
-| **Routing & Motion** | **React Router 7**, **Framer Motion** | Declarative route hierarchy, animated transitions, micro-interactions |
-| **Icons & UI Kit** | **Lucide React** | Clean, lightweight feather-style UI iconography |
-| **Backend Runtime** | **Node.js 20+**, **Express 5** | Native ES modules, modern asynchronous request pipelines |
-| **Database** | **Supabase (PostgreSQL)** | Managed PostgreSQL with 30 SQL migrations & PL/pgSQL atomic functions |
-| **Real-Time Layer** | **Socket.io** | Low-latency order status push updates to buyers, riders, and admins |
-| **Payment Gateway** | **Razorpay** | Server-side order creation, HMAC-SHA256 signature verification, webhooks |
-| **Authentication** | **JWT**, **bcryptjs**, **Google OAuth** | Multi-role token separation, httpOnly cookies, password hashing |
-| **Media Pipeline** | **Cloudinary**, **Multer** | Secure direct-to-cloud asset uploads and image optimization |
-| **Security Suite** | **Helmet**, **express-rate-limit**, **CORS** | Strict HTTP security headers, rate limiting, and origin allowlists |
+| Domain                 | Technology / Library                         | Description                                                                |
+| :--------------------- | :------------------------------------------- | :------------------------------------------------------------------------- |
+| **Frontend Framework** | **React 19**, **TypeScript**                 | Latest React features, strong typing across state, props, and API payloads |
+| **Build & Styling**    | **Vite 6**, **Tailwind CSS 4**               | Blazing-fast HMR, modern CSS nesting, custom theme tokens                  |
+| **Routing & Motion**   | **React Router 7**, **Framer Motion**        | Declarative route hierarchy, animated transitions, micro-interactions      |
+| **Icons & UI Kit**     | **Lucide React**                             | Clean, lightweight feather-style UI iconography                            |
+| **Backend Runtime**    | **Node.js 20+**, **Express 5**               | Native ES modules, modern asynchronous request pipelines                   |
+| **Database**           | **Supabase (PostgreSQL)**                    | Managed PostgreSQL with 30 SQL migrations & PL/pgSQL atomic functions      |
+| **Real-Time Layer**    | **Socket.io**                                | Low-latency order status push updates to buyers, riders, and admins        |
+| **Payment Gateway**    | **Razorpay**                                 | Server-side order creation, HMAC-SHA256 signature verification, webhooks   |
+| **Authentication**     | **JWT**, **bcryptjs**, **Google OAuth**      | Multi-role token separation, httpOnly cookies, password hashing            |
+| **Media Pipeline**     | **Cloudinary**, **Multer**                   | Secure direct-to-cloud asset uploads and image optimization                |
+| **Security Suite**     | **Helmet**, **express-rate-limit**, **CORS** | Strict HTTP security headers, rate limiting, and origin allowlists         |
 
 ---
 
