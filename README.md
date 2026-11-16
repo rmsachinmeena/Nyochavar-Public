@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <strong>Live Demo:</strong> <em>Coming Soon</em> &nbsp;•&nbsp;
+  <strong>Live Demo:</strong> <a href="https://www.nyochavar.in">nyochavar.in</a> &nbsp;•&nbsp;
   <strong>License:</strong> View Only (All Rights Reserved) &nbsp;•&nbsp;
   <strong>Repository:</strong> <a href="https://github.com/rmsachinmeena/Nyochavar-Public">Nyochavar-Public</a>
 </p>
@@ -124,7 +124,7 @@ The Express API and Socket.io share a single unified HTTP server instance. The c
 ## 🎨 UI & Visual Preview
 
 <p align="center">
-  <img src="Docs/UI_Idea/screen.png" alt="Nyochavar Storefront Design Preview" width="90%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+  <img src="Docs/screenshots/storefront-preview.png" alt="Nyochavar Storefront Preview" width="95%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
 </p>
 
 ### Portal Screenshot Gallery
