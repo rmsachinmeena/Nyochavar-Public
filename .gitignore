@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# WhatsApp Auth and Session Keys (Private security keys)
+whatsapp_auth/
+**/whatsapp_auth/
+
+# Build and OS files
+dist/
+.DS_Store
+Thumbs.db
+
+
+# Root-level extras
+.env
+.env.*
+!.env.example
+whatsapp_auth/
+**/whatsapp_auth/
+uploads/*
+!uploads/.gitkeep
+Backend/uploads/*
+!Backend/uploads/.gitkeep
+*.log
+logs/
+.vscode/
+.idea/

@@ -1,0 +1,40 @@
+{
+  "name": "Nyochavar Rider Partner",
+  "short_name": "Rider Partner",
+  "description": "Delivery partner companion app for real-time parcel dispatches and routes.",
+  "start_url": "/rider",
+  "id": "/rider",
+  "scope": "/rider",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F172A",
+  "theme_color": "#0284C7",
+  "icons": [
+    {
+      "src": "/icons/icon-rider.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Active Deliveries",
+      "short_name": "Deliveries",
+      "url": "/rider",
+      "icons": [{ "src": "/icons/icon-rider.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Customer Store",
+      "short_name": "Store",
+      "url": "/",
+      "icons": [{ "src": "/icons/icon-buyer.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Admin Portal",
+      "short_name": "Admin Login",
+      "url": "/admin/login",
+      "icons": [{ "src": "/icons/icon-admin.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}

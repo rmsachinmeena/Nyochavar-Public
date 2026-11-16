@@ -1,0 +1,40 @@
+{
+  "name": "Nyochavar Admin Console",
+  "short_name": "Admin Console",
+  "description": "Master operations and dispatch control for Nyochavar luxury platform.",
+  "start_url": "/admin/login",
+  "id": "/admin",
+  "scope": "/admin",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0F172A",
+  "theme_color": "#1E293B",
+  "icons": [
+    {
+      "src": "/icons/icon-admin.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Admin Dashboard",
+      "short_name": "Dashboard",
+      "url": "/admin",
+      "icons": [{ "src": "/icons/icon-admin.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Rider Delivery Portal",
+      "short_name": "Rider Portal",
+      "url": "/rider",
+      "icons": [{ "src": "/icons/icon-rider.svg", "sizes": "any", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Storefront",
+      "short_name": "Buyer Store",
+      "url": "/",
+      "icons": [{ "src": "/icons/icon-buyer.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
+}

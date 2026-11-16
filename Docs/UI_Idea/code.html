@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Petal &amp; Pen - Gifting Concierge</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-container": "#fffbff",
+                      "tertiary-fixed-dim": "#ccc5bc",
+                      "tertiary": "#605b54",
+                      "on-surface": "#191c1d",
+                      "surface-variant": "#e1e3e4",
+                      "inverse-surface": "#2e3132",
+                      "surface-container-high": "#e7e8e9",
+                      "background": "#f8f9fa",
+                      "surface-dim": "#d9dadb",
+                      "on-background": "#191c1d",
+                      "on-primary-container": "#fffbff",
+                      "primary-fixed-dim": "#ffb0cd",
+                      "on-secondary-fixed-variant": "#5c3d51",
+                      "secondary-fixed-dim": "#e5bad3",
+                      "inverse-primary": "#ffb0cd",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#f8f9fa",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#4a463f",
+                      "surface-container-low": "#f3f4f5",
+                      "primary-fixed": "#ffd9e4",
+                      "surface": "#f8f9fa",
+                      "surface-container-highest": "#e1e3e4",
+                      "outline-variant": "#debec8",
+                      "secondary-container": "#fdd0ea",
+                      "outline": "#8b7079",
+                      "on-primary": "#ffffff",
+                      "inverse-on-surface": "#f0f1f2",
+                      "secondary-fixed": "#ffd8ed",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#574048",
+                      "on-primary-fixed": "#3e0022",
+                      "tertiary-fixed": "#e9e1d8",
+                      "error-container": "#ffdad6",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#1e1b15",
+                      "surface-container": "#edeeef",
+                      "secondary": "#765469",
+                      "on-secondary-container": "#79576c",
+                      "on-primary-fixed-variant": "#8c0053",
+                      "on-secondary-fixed": "#2c1325",
+                      "primary": "#b10e6b",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#79746c",
+                      "primary-container": "#d23284",
+                      "surface-tint": "#b4136d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base-unit": "4px",
+                      "stack-gap-md": "24px",
+                      "stack-gap-sm": "12px",
+                      "container-padding-desktop": "80px",
+                      "container-padding-mobile": "20px",
+                      "stack-gap-lg": "48px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "30px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(236, 72, 153, 0.12);
+        }
+        .card-shadow {
+            box-shadow: 0 8px 24px rgba(236, 72, 153, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-surface-container/80 shadow-sm transition-all duration-300" id="topNav">
+<div class="flex justify-between items-center px-container-padding-desktop py-4 w-full max-w-7xl mx-auto md:px-container-padding-desktop px-container-padding-mobile">
+<!-- Left: Search Bar (Mobile hidden, Desktop flex) -->
+<div class="hidden md:flex flex-1">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 rounded-full hover:bg-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+</div>
+<!-- Mobile Menu Button -->
+<div class="flex md:hidden flex-1">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 rounded-full hover:bg-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+<!-- Center: Brand Logo -->
+<div class="flex-1 flex justify-center text-center">
+<a class="text-headline-md font-headline-md text-primary dark:text-primary-fixed-dim whitespace-nowrap" href="#">
+                    Petal &amp; Pen
+                </a>
+</div>
+<!-- Right: Navigation Links & Trailing Icons -->
+<div class="flex-1 flex justify-end items-center gap-stack-gap-md">
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-stack-gap-md mr-stack-gap-md">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 whitespace-nowrap" href="#">Flowers</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 whitespace-nowrap" href="#">Hampers</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 whitespace-nowrap" href="#">Personalized Gifts</a>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-2">
+<button aria-label="shopping_cart" class="p-2 text-primary dark:text-primary-fixed-dim hover:text-primary-container scale-95 active:scale-90 transition-transform rounded-full hover:bg-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+</button>
+<button aria-label="favorite" class="p-2 text-primary dark:text-primary-fixed-dim hover:text-primary-container scale-95 active:scale-90 transition-transform rounded-full hover:bg-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary hidden md:block">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+<button aria-label="person" class="p-2 text-primary dark:text-primary-fixed-dim hover:text-primary-container scale-95 active:scale-90 transition-transform rounded-full hover:bg-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary hidden sm:block">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-24 pb-stack-gap-lg">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[80vh] flex items-center bg-primary-fixed/30 overflow-hidden px-container-padding-mobile md:px-container-padding-desktop">
+<!-- Background Image Placeholder with slight overlay -->
+<div class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="A luxurious, high-end editorial flat lay of bespoke gifting items, including a delicate handwritten note, a minimalist ribbon, and fresh pastel flowers on a pristine white marble surface. The lighting is soft and natural, emphasizing the premium, intimate quality of the brand. The color palette is composed of soft pinks, warm sands, and clean whites, reflecting a modern romantic aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcCU_SCgP42DGIGacHpbqT8SmFBDhN1upiKaFV2RamRpPLO_QgaBg6XP_1t8MLjvg1E7jF4O-A0T-ncbkIyQufG-5wdnaJIpALUplO5Ogxr612SXceSbJEYfyubig14_cPkAi-eBRhvXdB0yHMIXYKd-ktoWUcET6F99Xyij-kZvVDvGzTyTVmC8ZsYllNMju8q5Gg1reQHnZ-_ceJFIstVMFt2AY1eyCUEhH8XWbTqsiaDDAS6lUY')"></div>
+<!-- Ambient Gradient -->
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+<div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-stack-gap-md items-center">
+<div class="md:col-span-7 lg:col-span-6 flex flex-col items-start space-y-stack-gap-md py-12">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Gifting Concierge</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface text-balance">
+                        Customized gifts delivered same-day. <br class="hidden lg:block"/>
+<span class="text-primary italic">Make every moment unforgettable.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mt-4">
+                        Curated experiences and bespoke arrangements for the people you cherish most, wrapped with elegance and delivered with care.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-medium hover:bg-surface-tint transition-colors focus:ring-4 focus:ring-primary-container outline-none">
+                            Shop Collections
+                        </button>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 rounded-full font-medium hover:bg-secondary-fixed-dim transition-colors focus:ring-4 focus:ring-secondary-container outline-none flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                            Plan an Occasion
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Occasions Section -->
+<section class="py-24 px-container-padding-mobile md:px-container-padding-desktop bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Curated for Every Occasion</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Find the perfect expression of your sentiment.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-stack-gap-sm md:gap-stack-gap-md">
+<!-- Occasion Card 1 -->
+<a class="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl card-shadow hover-lift text-center h-48 border border-surface-container-low transition-colors hover:border-primary-fixed" href="#">
+<div class="w-16 h-16 rounded-full bg-primary-fixed/50 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">cake</span>
+</div>
+<span class="font-medium text-on-surface group-hover:text-primary transition-colors">Birthday</span>
+</a>
+<!-- Occasion Card 2 -->
+<a class="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl card-shadow hover-lift text-center h-48 border border-surface-container-low transition-colors hover:border-primary-fixed" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed/50 flex items-center justify-center mb-4 text-secondary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</div>
+<span class="font-medium text-on-surface group-hover:text-primary transition-colors">Anniversary</span>
+</a>
+<!-- Occasion Card 3 -->
+<a class="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl card-shadow hover-lift text-center h-48 border border-surface-container-low transition-colors hover:border-primary-fixed" href="#">
+<div class="w-16 h-16 rounded-full bg-error-container/50 flex items-center justify-center mb-4 text-error group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">volunteer_activism</span>
+</div>
+<span class="font-medium text-on-surface group-hover:text-primary transition-colors">Valentine's</span>
+</a>
+<!-- Occasion Card 4 -->
+<a class="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl card-shadow hover-lift text-center h-48 border border-surface-container-low transition-colors hover:border-primary-fixed" href="#">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed/50 flex items-center justify-center mb-4 text-tertiary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">local_bar</span>
+</div>
+<span class="font-medium text-on-surface group-hover:text-primary transition-colors">Congratulations</span>
+</a>
+<!-- Occasion Card 5 -->
+<a class="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl card-shadow hover-lift text-center h-48 border border-surface-container-low transition-colors hover:border-primary-fixed" href="#">
+<div class="w-16 h-16 rounded-full bg-primary-fixed-dim/30 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">healing</span>
+</div>
+<span class="font-medium text-on-surface group-hover:text-primary transition-colors">Get Well Soon</span>
+</a>
+<!-- Occasion Card 6 -->
+<a class="group flex flex-col items-center justify-center p-6 bg-surface-container-lowest rounded-xl card-shadow hover-lift text-center h-48 border border-surface-container-low transition-colors hover:border-primary-fixed" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-container/50 flex items-center justify-center mb-4 text-on-secondary-container group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">celebration</span>
+</div>
+<span class="font-medium text-on-surface group-hover:text-primary transition-colors">Festivals</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant w-full">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-stack-gap-md px-container-padding-desktop py-stack-gap-lg">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col space-y-4">
+<div class="text-headline-sm font-headline-sm text-primary">Petal &amp; Pen</div>
+<p class="text-on-surface-variant font-body-md text-body-md">
+                    Elevating the art of gifting.
+                </p>
+<div class="flex gap-4 mt-4">
+<a aria-label="Instagram" class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">photo_camera</span>
+</a>
+<a aria-label="Facebook" class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">thumb_up</span>
+</a>
+</div>
+</div>
+<!-- Links Columns -->
+<div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-stack-gap-sm">
+<div class="flex flex-col space-y-2">
+<a class="text-on-surface-variant font-body-md text-body-md hover:underline hover:text-primary transition-all duration-200" href="#">Birthday Flowers</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:underline hover:text-primary transition-all duration-200" href="#">Anniversary Hampers</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:underline hover:text-primary transition-all duration-200" href="#">Sympathy Gifts</a>
+</div>
+<div class="flex flex-col space-y-2">
+<a class="text-on-surface-variant font-body-md text-body-md hover:underline hover:text-primary transition-all duration-200" href="#">Gifting Tips Newsletter</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:underline hover:text-primary transition-all duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:underline hover:text-primary transition-all duration-200" href="#">Contact Us</a>
+</div>
+</div>
+<!-- Copyright Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col justify-end text-sm text-on-surface-variant">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80 mt-8 md:mt-0">
+                    © 2024 Petal &amp; Pen Gifting Concierge. All rights reserved. Same-day delivery available in London, New York, and Paris.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll interaction for the top nav
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('topNav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body></html>

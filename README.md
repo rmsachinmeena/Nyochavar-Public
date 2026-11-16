@@ -139,5 +139,8 @@ Docs/       Notes and the screenshots folder
 
 View only, all rights reserved. See [LICENSE](LICENSE).
 #   N y o c h a v a r - P u b l i c  
+<<<<<<< HEAD
  #   N y o c h a v a r - P u b l i c  
+=======
+>>>>>>> 4e2f11604d8d07e19ef17c02a4ff991d2d5ad3d3
  

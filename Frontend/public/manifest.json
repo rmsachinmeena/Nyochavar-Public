@@ -1,0 +1,80 @@
+{
+  "name": "Nyochavar - Luxury Gifting & Express Delivery",
+  "short_name": "Nyochavar",
+  "description": "Customized luxury gifts, fresh blooms, and personalized hampers delivered same-day.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A0A0B",
+  "theme_color": "#0052FF",
+  "categories": ["shopping", "lifestyle", "business"],
+  "icons": [
+    {
+      "src": "/icons/icon-app.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-buyer.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-rider.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-admin.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Customer Storefront",
+      "short_name": "Shop Gifts",
+      "description": "Browse luxury gifts, track orders, or shop for special occasions",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icons/icon-app.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Rider Delivery Partner Portal",
+      "short_name": "Rider Portal",
+      "description": "Live delivery orders, GPS route maps, and earnings tracker",
+      "url": "/rider",
+      "icons": [
+        {
+          "src": "/icons/icon-rider.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Admin Control & Operations",
+      "short_name": "Admin Portal",
+      "description": "Manage orders, riders, catalog, inventory, and analytics",
+      "url": "/admin/login",
+      "icons": [
+        {
+          "src": "/icons/icon-admin.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}
